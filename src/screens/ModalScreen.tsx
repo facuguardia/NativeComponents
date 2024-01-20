@@ -37,8 +37,8 @@ export const ModalScreen = () => {
               elevation: 10,
               borderRadius: 5,
             }}>
-            <Text style={{fontSize: 20, fontWeight: 'bold'}}>Modal</Text>
-            <Text style={{fontSize: 16, fontWeight: '300', marginBottom: 20}}>
+            <Text style={{fontSize: 20, fontWeight: 'bold',color: 'black',}}>Modal</Text>
+            <Text style={{fontSize: 16, fontWeight: '300', marginBottom: 20, color: 'black'}}>
               Cuerpo del modal
             </Text>
             <Button title="Cerrar" onPress={() => setIsVisible(false)} />

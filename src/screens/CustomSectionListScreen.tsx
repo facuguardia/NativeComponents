@@ -115,7 +115,7 @@ const casas: Casas[] = [
 
 export const CustomSectionListScreen = () => {
   return (
-    <View style={{...styles.globalMargin, flex: 1}}>
+    <View style={{...styles.globalMargin, flex: 1,}}>
       <SectionList
         sections={casas}
         keyExtractor={(item, index) => item + index}

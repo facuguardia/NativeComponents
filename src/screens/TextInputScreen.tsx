@@ -85,6 +85,7 @@ const stylesScreen = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 10,
     marginVertical: 10,
+    color: 'black',
   },
   switchRow: {
     flexDirection: 'row',
@@ -94,5 +95,6 @@ const stylesScreen = StyleSheet.create({
   },
   switchText: {
     fontSize: 25,
+    color: 'black',
   },
 });

@@ -61,5 +61,6 @@ const styles = StyleSheet.create({
   },
   switchText: {
     fontSize: 25,
+    color: 'black',
   },
 });

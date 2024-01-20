@@ -13,7 +13,6 @@ import Carousel, {Pagination} from 'react-native-snap-carousel';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {useAnimation} from '../hooks/useAnimation';
-import {useNavigation} from '@react-navigation/native';
 import {StackScreenProps} from '@react-navigation/stack';
 
 const {height, width} = Dimensions.get('window');
@@ -142,5 +141,6 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 16,
     fontWeight: '500',
+    color: 'black',
   },
 });
