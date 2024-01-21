@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Alert, Button, View} from 'react-native';
 
 import prompt from 'react-native-prompt-android';
 
 import {HeaderTitle} from '../components/HeaderTitle';
 import {styles} from '../theme/appTheme';
+import { ThemeContext } from '../context/theme/ThemeContext';
 
 export const AlertScreen = () => {
+
+  const {theme: {colors}} = useContext(ThemeContext);
+
+
   const showAlert = () => {
     Alert.alert(
       'Título',
@@ -27,13 +32,6 @@ export const AlertScreen = () => {
   };
 
   const showPrompt = () => {
-    // Alert.prompt(
-    //     '¿Está seguro?',
-    //     'Esta acción no se puede revertir',
-    //     ( valor: string ) => console.log('info: ', valor ),
-    //     'plain-text',
-    //     'Hola Mundo',
-    // );
     prompt(
       'Enter password',
       'Enter your password to claim your $1.5B in lottery winnings',
@@ -61,11 +59,11 @@ export const AlertScreen = () => {
     <View style={styles.globalMargin}>
       <HeaderTitle title="Alerts" />
 
-      <Button title="Mostrar Alerta" onPress={showAlert} />
+      <Button title="Mostrar Alerta" onPress={showAlert} color={colors.primary} />
 
       <View style={{height: 10}} />
 
-      <Button title="Mostrar Prompt" onPress={showPrompt} />
+      <Button title="Mostrar Prompt" onPress={showPrompt} color={colors.primary} />
     </View>
   );
 };
